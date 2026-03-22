@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Inter Personalizada</title>
+    <style>
+        :root {
+            --inter-orange: #FF7A00;
+            --bg-gray: #F5F6F8;
+            --white: #FFFFFF;
+            --text-dark: #202021;
+            --text-gray: #666666;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #E5E5E5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 414px;
+            background-color: var(--bg-gray);
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo para ícones padrão */
+        .icon-img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .logo-inter {
+            height: 88px;
+        }
+
+        .header-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            background: var(--white);
+            padding: 8px 15px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .tab img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 50%;
+        }
+
+        .balance-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        .balance-card p {
+            color: var(--text-gray);
+            margin: 0 0 8px 0;
+            font-size: 14px;
+        }
+
+        .balance-card h2 {
+            margin: 0 0 24px 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .balance-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn-action {
+            background: #F2F4F7;
+            text-decoration: none;
+            color: var(--text-dark);
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border-radius: 14px;
+            font-weight: 600;
+            gap: 8px;
+            border: none;
+        }
+
+        /* Grid de Menu */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .menu-item {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .icon-box {
+            background: var(--white);
+            height: 64px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .icon-box img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .banner {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: 18px;
+            margin: 25px 0 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="https://logodownload.org/wp-content/uploads/2018/11/banco-inter-logo-0-1.png" class="logo-inter" alt="Inter">
+        
+        <div class="header-icons">
+            <img src="https://cdn-icons-png.flaticon.com/512/709/709612.png" class="icon-img" alt="Ver">
+            <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" class="icon-img" alt="Busca">
+            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" class="icon-img" alt="Perfil">
+        </div>
+    </header>
+
+    <div class="tabs">
+        <div class="tab">
+            <img src="https://flagcdn.com/w40/br.png" alt="Brasil"> Brasil
+        </div>
+        <div class="tab" style="opacity: 0.5;">
+            <img src="https://flagcdn.com/w40/us.png" alt="Global"> Global
+        </div>
+    </div>
+
+    <div class="balance-card">
+        <p>Conta Digital</p>
+        <h2>R$ 10.760,00</h2>
+        <div class="balance-actions">
+            <a href="SUA_PAGINA_DO_PIX_AQUI.html" class="btn-action">
+                <img src="https://logospng.org/download/pix/logo-pix-icone-512.png" style="width:18px;" alt="Pix"> Pix
+            </a>
+            <button class="btn-action">
+                <img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" style="width:18px;" alt="Pagar"> Pagar
+            </button>
+        </div>
+    </div>
+
+    <div class="menu-grid">
+        <div class="menu-item">
+            <div class="icon-box"><img src="https://cdn-icons-png.flaticon.com/512/633/633611.png" alt="Cartões"></div>
+            Cartões
+        </div>
+        <div class="menu-item">
+            <div class="icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2108/2108625.png" alt="Investir"></div>
+            Investir
+        </div>
+        <div class="menu-item">
+            <div class="icon-box"><img src="https://cdn-icons-png.flaticon.com/512/3596/3596091.png" alt="Recarga"></div>
+            Recarga
+        </div>
+        <div class="menu-item">
+            <div class="icon-box"><img src="https://cdn-icons-png.flaticon.com/512/2311/2311523.png" alt="Mais"></div>
+            Mostrar mais
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="https://play-lh.googleusercontent.com/0SZfiE89vmBWmfMyOiDQVUzW0EFaGVArgwEhVi4yhUkCGzoiTCIuSVdrtCyFKF9iWnF74oyyv4HKMEYbPK5DB9s=w526-h296-rw" alt="Banner 1">
+    </div>
+
+    <div class="section-title">Ser Inter é ter</div>
+
+    <div class="banner">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwgcUfFDXHu9vqu0lW7l_kTrc8V8S_PQB_zbyN578tFobpueILd6i-V70&s=10" alt="Banner 2">
+    </div>
+</div>
+
+</body>
+</html>
